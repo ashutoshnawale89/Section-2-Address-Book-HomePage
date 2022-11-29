@@ -42,6 +42,7 @@ function jsonStructure(fullname,phone,address,city,state,zip){
     this.zip=zip;
 }
 
+//To Store the Data like Name state etc, In The Array 
 function addToBook(){
     var isNull = fullname.value!='' && phone.value!='' && address.value!='' && city.value!='' && state.value!='' && zip.value!='';
     if(isNull){

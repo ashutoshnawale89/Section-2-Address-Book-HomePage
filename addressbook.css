@@ -116,9 +116,9 @@ body{
 .entry {
     
     background:rgb(250, 211, 211);  
-    height:200px;
+    height:100px;
     border-bottom:1px solid;
-    
+    font-weight: bold;   
 }
 
 
