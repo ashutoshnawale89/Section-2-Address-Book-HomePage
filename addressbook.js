@@ -65,16 +65,6 @@ function removeEntry(e){
     }
 }
 
-function removeEntry(e){
-    // Remove an entry from the addressbook
-    if(e.target.classList.contains('delbutton')){
-        var remID = e.target.getAttribute('data-id');
-        addressBook.splice(remID,1);
-        localStorage['addbook'] = JSON.stringify(addressBook);
-        showAddressBook();
-    }
-}
-
 function clearForm(){
     var formFields = document.querySelectorAll('.formFields');
     for(var i in formFields){
@@ -82,6 +72,8 @@ function clearForm(){
     }
 }
 
+
+// Inser The Value In Local Storage
 function showAddressBook(){
     if(localStorage['addbook'] === undefined){
         localStorage['addbook'] = '';
